@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.9.29] - 2026-11-17
+
+### Changed
+
+- **核心版本升级到 `0.13.3`**（`dsh.core.version`）：吃到 trendradar 核心本次推送修复——
+  - **推送标题去重**：卡片/正文标题不再重复出现两次（此前飞书 `interactive` 卡片 header 与正文首行各显示一条标题）。
+  - **仓库名加超链接**：趋势榜与订阅发版消息里，`markdown` / `interactive` 渠道的仓库名渲染为可点击的 `[owner/repo](url)`；`text` / `post` 渠道仍为纯文本。
+- 契约与 wire 不变（`@morehao/trendradar-contract` 仍 `0.8.1`，`ipcSchema` 不变）；插件自身代码未改动，本次仅为跟随核心版本。
+
 ## [v0.9.28] - 2026-11-17
 
 ### Fixes
